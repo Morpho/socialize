@@ -1,0 +1,6 @@
+-r base.txt
+raven==6.10.0
+uWSGI==2.0.18
+dj-database-url==0.5.0
+python-decouple==3.1
+psycopg2>=2.7,<3.0
