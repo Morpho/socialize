@@ -7,7 +7,7 @@ from .views import QuestionViewSet, QuizViewSet, QuizDetailsViewSet
 router = routers.DefaultRouter()
 router.register(r'quiz', QuizViewSet)
 router.register(r'quiz_details', QuizDetailsViewSet)
-router.register(r'question', QuestionViewSet, base_name='Question')
+router.register(r'question', QuestionViewSet, base_name='question')
 
 # Nested Router for /quiz/<pk>/questions/ endpoint.
 question_router = nested_routers.NestedSimpleRouter(router, r'quiz', lookup='quiz')
