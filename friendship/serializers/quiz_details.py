@@ -21,7 +21,7 @@ class QuizDetailsSerializer(serializers.ModelSerializer):
     message = serializers.CharField(read_only=True)
     invitation_link = serializers.SerializerMethodField()
 
-    quiz = QuizSerializer()
+    quiz = QuizSerializer(required=False)
     user = UserSerializer()
     invited_by = serializers.PrimaryKeyRelatedField(
         required=False, queryset=QuizDetails.objects.all())
