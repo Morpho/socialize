@@ -39,7 +39,7 @@ They are related to each other in following way:
  - A Question can appear in many Quizes and a Quiz can have many Questions.
  - A user can take multiple Quizes and a Quiz can be taken by multiple Users.
  - QuizDetails is associative entity between User and Quiz.
- - QuizDetails contains which User responses to Questions in a particular Quiz.
+ - QuizResults contains which User responses to Questions in a particular Quiz.
 
 ### Static Analysis
 This project comes with three static analysis tools
