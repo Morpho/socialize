@@ -1,0 +1,23 @@
+language: python
+
+python:
+  - "3.7-dev"
+install:
+  - "pip install -r requirements/test.txt"
+env:
+  - DJANGO_SETTINGS_MODULE=social.settings.dev
+script:
+  - python manage.py test friendship
+
+notifications:
+  email: false
+
+# This reportedly works around an issue downloading packages from pypi on
+# travis. Consider removing this after the underlying issue is fixed.
+# https://github.com/travis-ci/travis-ci/issues/2389
+sudo: false
+
+matrix:
+  fast_finish: true
+
+cache: pip
