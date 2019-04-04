@@ -143,6 +143,7 @@ Content-Type: application/json
     "text": "What is your name?"
   }
 ]
+```
 
 Once the user has done the quiz he can submit it
 
