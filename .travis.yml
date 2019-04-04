@@ -5,7 +5,7 @@ python:
 install:
   - "pip install -r requirements/test.txt"
 env:
-  - DJANGO_SETTINGS_MODULE=social.settings.dev
+  - DJANGO_SETTINGS_MODULE=socialize.settings.dev
 script:
   - python manage.py test friendship
 
@@ -20,4 +20,3 @@ sudo: false
 matrix:
   fast_finish: true
 
-cache: pip
